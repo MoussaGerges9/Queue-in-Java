@@ -26,7 +26,9 @@ public class Main {
 
 		System.out.println("Element at the top: " + queue.element()); // Gets also the element at the top but through an error if the queue is empty
 		queue.offer("Sorry for late.. I'm a new person!"); // It doesn't through an exception but returns false if the queue is full
-		System.out.println("The queue after too many modifications: " + queue);
+		System.out.println("\nThe queue after too many modifications: ");
+		
+		queue.forEach(a-> System.out.println(a));
 	}
 
 }
